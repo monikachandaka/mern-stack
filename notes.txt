@@ -1,0 +1,154 @@
+FrontEnd:
+----------
+->What are all the user can seen on screen is called as FrontEnd
+->to design frontend we have different technologies like [html,css,js,react js, agular js, react js...etc]
+
+backend:
+----------
+-> backend is the server side programming having api logics, database logics to monitor and manage the data that will comes from frontend(req & res )
+-> here also we have some technologies(programming languages) like node js & express, java , pyhton , ruby , c , c++
+
+database
+----------
+-> database is a place where we can store the data
+-> to store the data we have techonology like mysql, sql, postgres sql, mongoDB,newp4j , cassandra, HBase, raike......etc
+
+Web Applications :
+------------------
+    -> Any Applications that will be run in browsers is called as a Web Applications 
+     ->Types of Applications 
+        1. Static web Applications
+            -> any web applications that doesn't have functionalities is called a static web applications 
+            -> To build static web applications we need to use only HTML and css
+
+        2. dynamic web applications
+            ->any web applications that  have functionalities is called a static web applications 
+            -> To build dynamic web applications we need to use only HTML, CSS and JS
+            
+
+Web Page:
+---------
+    ->HTML documents is called a web pages
+
+WebSite:
+--------
+    ->Collection of HTML documents is called as a websites
+
+Web server:
+-----------
+    ->Collection of websites is called as web server
+
+Browser Working Principle
+--------------------------
+    ->
+
+
+HTML:
+-----
+    ->Is used to build structure of the web pages
+    ->HTML stands for Hyper text markup languages
+    
+DOCTYPE html - version of HTML
+
+HTML Tags:
+----------
+    ->tags are the predefined words which enclosed with both opening and closing angulaer brackets
+
+    ->ex: <h1></h1>,<div></div>,<head></head>
+
+
+Types of tags:
+--------------
+    1. Paired tags
+            -> any tags having both opening and closing tags
+            ex:<html></html>, <head></head>........etc
+
+            i. heading tags
+
+    
+            ii. formatting tags
+                    ->these tags have thir own CSS behaviors
+                    Ex:<b></b>
+
+            iii. other tags
+                    <div></div>, <p</p>, <span></span>, list tags , semantic tags, media tags, table tags , form tags....
+
+    2. Unpaired tags:
+            ->any tags having onlu=y opening tags is called as a upaired tags 
+            Ex : <br>, <input>, <hr>, <meta> , <col>.....etc
+
+
+Attributes in HTML:
+-------------------
+        -> Attributes are used to give additional information to the html tags
+        -> Attributes are always in opening tags
+        ->most of the HTML elements having Attributes
+        -> attributes are always key and value Paired
+
+        ex:<h1 align="center">HELLO</h1>
+
+ELEMENTS IN HTML:
+----------------
+        ->The opening tag , closing tag and content together is called as a HTML elements
+          Ex:<p>This is a paragraph</p>
+
+          Types of elements:
+                1. Inline level elements
+                        ->the elements that only consumes only content width
+                         EX: All formatting tags, <span></span>......etc
+                2. block level elements
+                        ->the elements which consume entire width of the browsers
+                        Ex: all heading tags, <div></div>, other tags....etc
+
+
+Image tags:
+-----------
+        -> <img> tag used to display images in webpage
+        -> img tag attributes:
+                1. src (source):
+                        -> src will accept image address as a value 
+                            1. absolute path:
+                                    ->Browser image address
+                            2. relative path
+                                    ->Downloaded image address 
+
+                2. alt 
+                3. height
+                4.width
+                5. style
+
+MARQUEE TAG :
+-------------
+        -> <marquee></marquee> are used to scroll the content 
+        -> Marquee Attributes
+                1. behavior : scroll (default value), slide, alternate
+                2. direction : left, right, up , down
+                3. scrollamount 
+                4.loop
+                5.height
+                6.width 
+                7. bgcolor
+
+LIST :
+--------
+          ->List are used to display items/data in proper manner
+          TYPES:
+           1.Orderd List
+             ->ordered list are used to display items in swquence manner
+             -><ol></ol> used to represent the ordered list
+             -> <li></li> it represents the 
+           2.Unordered List
+           3.description list/definition list
+           4.Nested List.
+
+
+        
+
+
+Creating repository in GUTHUB
+--------------------------------
+Step1: Create a new repository is GITHUB
+Step2: Open the project folder in command prompt
+Step 3: Configure GUTHUB credentials to GIT by entering a commands git config --global user.name"akashsneha15"
+Step 4:Initialize the git repository by entering a command git init
+Step 5: The command to add files or folders git add . 
