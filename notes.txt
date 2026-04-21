@@ -64,11 +64,34 @@ Types of tags:
             ex:<html></html>, <head></head>........etc
 
             i. heading tags
-
+                 ->heading tags used to display headings in web page 
+                ->in html we have total 6 heading tags 
+                ->Ex:
+                            <h1>heading tag-1</h1>
+                            <h2>heading tag-2</h2>
+                            <h3>heading tag-3</h3>
+                            <h4>heading tag-4</h4>
+                            <h5>heading tag-5</h5>
+                            <h6>heading tag-6</h6>
     
             ii. formatting tags
                     ->these tags have thir own CSS behaviors
-                    Ex:<b></b>
+                    ->formatting tags having there own CSS behaviors 
+
+                Ex: 
+                    1. <b> </b>                 ->font weight bold 
+                    2. <strong></strong>        ->font weight bold
+                    3. <i> </i>                 ->font style italic 
+                    4. <em> </em>               ->font style italic 
+                    5. <u> </u>                 ->font decoration underline 
+                    6. <mark></mark>            ->to highlight content 
+                    7. <sub> </sub>             ->subscript 
+                    8. <sup></sup>              ->superscript 
+                    9. <center></center>        ->to align content in center 
+                    10. <marquee></marquee>     ->to scroll the content 
+                    11. <strike></strike>       ->font decoration line-through 
+                    12. <pre> </pre> ..etc 
+                
 
             iii. other tags
                     <div></div>, <p</p>, <span></span>, list tags , semantic tags, media tags, table tags , form tags....
@@ -136,13 +159,59 @@ LIST :
            1.Orderd List
              ->ordered list are used to display items in swquence manner
              -><ol></ol> used to represent the ordered list
-             -> <li></li> it represents the 
+             -> <li></li> it represents the list items
+
+             ordered list attributes
+             --------------------------
+             1.type:a,A,i,I,1
+             2.start
+             3.reverse
+
            2.Unordered List
+           -----------------
+               ->unordered list is used to display items with symbols
+               -><ul></ul> used to represent the unordered list
+               -><li></li> it represents the list
+
+               Unordered list Attributes
+               --------------------------
+                    1.type:none,circle,disc(defult value),square
+
            3.description list/definition list
-           4.Nested List.
+           ---------------------------------
+                ->are used to describe (define) items
+                   1.<dl></dl> description list
+                   2.<dt></dt> description term
+                   3.<dd></dd> description data
 
+            4.Nested List
+            ---------------
+                    ->a list having one or more another list is called as nested list
 
-        
+Tables in HTML:
+---------------
+        ->The collection of cell or rows and columns is called as a table
+
+        Tags in tables:
+        --------------
+             1.<table></table>         table Tags
+             2.<tr></tr>               table row
+             3.<th></th>               table heading
+             4.<td></td>               table data
+             5.<thead></thead>         table head
+             6.<tbody></tbody>         table body                 
+             7.<tfoot></tfoot>         table footer
+             8.<colgroup></colgroup>   colum group
+             9.<col>                   colum
+ formula for getting table: table>(tr<td*3)*3            
+
+         table attributes
+         --------- -----------
+                 1.border :     
+                 2.cellspacing :used to apply space between cells in table
+                 3.cellpadding :to apply space b/w cell border amd content
+                 4.align bgcolor
+                 5.bgcolor
 
 
 Creating repository in GUTHUB
