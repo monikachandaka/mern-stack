@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            display: flex;
+            justify-content: center;
+            background-image: url("https://t4.ftcdn.net/jpg/04/61/47/03/360_F_461470323_6TMQSkCCs9XQoTtyer8VCsFypxwRiDGU.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        fieldset{
+            border: none;
+            background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_ZydU4PTKeSzpgKkOlazzcx43L5SXtiK0RQ&s');
+            margin: 20px;
+            padding: 30px;
+            border-radius:10px 50px;
+            box-shadow: 10px 10px 5px aliceblue;
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
+
+        label{
+            color:blue;
+            font-size:20px;
+            font-weight:bold;
+            font-style:italic;
+            margin-right:20px;
+        }
+        button{
+            padding:10px 30px;
+            background-color: salmon;
+            font-weight:bold;
+            font-style:italic;
+            font-family: monospace;
+            border-radius:8px;
+        }
+        h1{
+            text-align: center;
+            color:transparent;
+            background-image: linear-gradient(rgb(220, 142, 238),red);
+            background-clip: text;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="">
+        <fieldset>
+            <h1>JOB APPLICATION FORM</h1>
+            <label for="fname">Firstname :</label>
+            <input type="text" id="fname" maxlength="8" minlength="3" required placeholder="Enter FirstName">
+
+            <br><br>
+            <label for="lname">LastName :</label>
+            <input type="text" id="lname" placeholder="Enter last name" minlength="3" maxlength="6">
+            <br><br>
+
+            <label for="email">Email :</label>
+            <input type="email" required placeholder="Enter your email">
+
+            <br><br>
+            <button type="submit">Submit</button>
+
+            <br><br>
+            <label for="phNo">Phone NO :</label>
+            <input type="tel" pattern="[6-9]{1} [0-9]{9}" id="phNo" required placeholder="+91">
+
+            <br><br>
+            <button type="submit">Submit</button>
+
+            <br><br>
+            <label for="DOB" name="DOB"> DOB :</label>
+            <input type="date" id="DOB">
+
+            <br><br>
+            <label for="gender">Gender :</label>
+            <input type="radio" id="gender" name="gender">Male 
+            <input type="radio" id="gender" name="gender">Female 
+
+
+            <br><br>
+            <label for="state" >State</label>
+            <select name="" id="state" >
+                
+                <option value="">AP</option>
+                <option value="">TL</option>
+                <option value="">TN</option>
+                <option value="">UP</option>
+                <option value="">MP</option>
+            </select>
+
+            <br><br>
+            <label for="address">ADDRESS :</label>
+            <textarea name="" rows="5" cols="5" id="address" placeholder="Enterr full address"></textarea>
+
+            <br><br>
+            <label for="skills">Skills :</label>
+            <input type="checkbox" id="skills">NodeJS
+            <input type="checkbox" id="skills">ExpressJS
+            <input type="checkbox" id="skills">Git
+            <input type="checkbox" id="skills">ReactJS
+            <input type="checkbox" id="skills">MongoDB
+            
+            <br><br>
+            <label for="languages">Languages :</label><br>
+            <input type="range"> English <br>
+            <input type="range"> Hindi <br>
+            <input type="range"> Telugu
+            
+            <br><br>
+            <label for="resume" accept=".pdf, .doc" >RESUME :</label>
+            <input type="file" >
+
+            <br><br>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </fieldset>
+    </form>
+
+</body>
+</html>
