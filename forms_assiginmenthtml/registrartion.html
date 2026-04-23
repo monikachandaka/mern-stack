@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <form>
+            <fieldset>
+            <h1 align="center">Registration Form</h1><hr><hr>
+            <label for="fname">First Name :</label>
+            <input type="text" id="fname" maxlength="8" minlength="3" required placeholder="Enter FirstName">
+            <br><br>
+
+            <label for="lname">Last Name :</label>
+            <input type="text" id="lname" placeholder="Enter last name" minlength="3" maxlength="6">
+            <br><br>
+             <label for="email">Email :</label>
+            <input type="email" id="email" placeholder="Enter email" required>
+              <br><br>
+             
+             <label for="password">Password :</label>
+             <input type="password" id="password" placeholder="Enter password" minlength="6" maxlength="20" required>   
+                <br><br>
+
+                <label for="confirm_password">Confirm Password :</label>
+                <input type="password" id="confirm_password" placeholder="Confirm password" minlength="6" maxlength="20" required>
+                <br><br>
+
+                <label for="gender">Gender :</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>          
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other" required>
+                <label for="other">Other</label>            
+                <br><br>
+
+                <label for="hobbies">Hobbies :</label>
+                <input type="checkbox" id="hobby1" name="hobbies" value="hobby1">
+                <label for="hobby1">Reading</label>     
+                <input type="checkbox" id="hobby2" name="hobbies" value="hobby2">
+                <label for="hobby2">Traveling</label>           
+                <input type="checkbox" id="hobby3" name="hobbies" value="hobby3">
+                <label for="hobby3">Cooking</label>     
+                <input type="checkbox" id="hobby4" name="hobbies" value="hobby4">
+                <label for="hobby4">Sports</label>
+                <input type="checkbox" id="hobby5" name="hobbies" value="hobby5">
+                <label for="hobby5">Music</label>
+                <input type="checkbox" id="hobby6" name="hobbies" value="hobby6">
+                <label for="hobby6">Gaming</label>
+                <br><br>
+                
+                <label for="dob">DOB :</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <br><br>
+
+                <button type="submit">Submit</button>
+        </form>
+    
+    
+</body>
+</html>

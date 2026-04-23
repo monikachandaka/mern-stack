@@ -212,6 +212,159 @@ Tables in HTML:
                  3.cellpadding :to apply space b/w cell border amd content
                  4.align bgcolor
                  5.bgcolor
+ 
+formula to create table : table>(tr>td*n)*n
+                
+        Attributes in td/th:
+        --------------------
+                1. rowspan
+                2.colspan
+                3.align
+                4.bgcolor
+
+
+
+Forms in HTML:
+--------------
+        ->Froms areused to collect the user information digitally
+
+        Form Tags:
+        ---------
+                1. <form></form>
+                2.<fieldset></fieldset>  - used to design border of the formset
+                3. <legend></legend>     - used to label the form
+                4. <label></label>       - used to label the input field
+                5. <input>               - used to take input from the user
+                6. <button></button>     - used to display buttons in form
+                7. <textarea></textarea> - used to collect large data text from the user(this is flexible input box)
+                8. <select></select>     - used to select option in group of options(<option></option>) 
+
+Form Attributes:
+-----------------
+        1. action - action will accept the Url as a value 
+        2. method -
+
+Fieldset Attributes
+-------------------
+        1. style
+        2.id
+        3.class
+
+legend Attributes:
+-----------------
+        1.style
+        2.id
+        3.class
+
+
+label attributes:
+-----------------
+        1.for (used to link the unout field)
+        2. id 
+        3. class
+        4. style
+
+input attributes
+-----------------
+        1. type
+        2. id
+        3.name
+        4. placeholder
+        5. min 
+        6. max
+        7. pattern
+        8. minlength
+        9. maxlength
+        10. required
+        11. readonly
+        12. style
+        13. class
+
+
+button attributes:
+-------------------
+        1.type
+        2.id
+        3.class
+        4.style
+
+textarea attributes:
+--------------------
+        1. id
+        2. class
+        3.required
+        4. placeholder
+        5. required
+
+        INput type attribute values:
+        -------------------------
+        1. test
+        2.email
+        3.password
+        4.date 
+        5.datetime
+        6.datetime-local
+        7. week
+        8. month
+        9. tel 
+        10. radio
+        11. checkbox
+        12. range
+        13. Url
+        14. image
+        15. button 
+        16. submit
+        17. reset 
+        18. file
+        19. search
+        20. number - logic 
+                        [6-9]{1} [0-9]{9}
+
+
+media tags:
+------------
+        ->media tags are used to dispay audio,video or to embed google maps, youtube videos, documents, webpages...etc
+
+        -> media tags like 
+                1.audio
+                        -><audio></audio> are used to display audios is web pages
+
+                        Audio tag attributes:
+                        -----------------------
+                        1. src (source)
+                        2. controls
+                        3. muted
+                        4. loop
+                        5. autoplay 
+                
+                2. Video
+                        -><video></video> are used to display videos in web Page
+
+                        Video tag attributes
+                        ---------------------
+                         1. src (source)
+                        2. controls
+                        3. muted
+                        4. loop
+                        5. autoplay 
+                3. iframe
+                        -><iframe></iframe> tags are used to embed google maps, youtube videos, documents, websites, webpages.......
+
+                        iframe Attributes:
+                        ------------------
+                        1. src
+                        2. frameborder
+                        3. height
+                        4.width
+
+
+Creating repository in GUTHUB
+--------------------------------
+Step1: Create a new repository is GITHUB
+Step2: Open the project folder in command prompt
+Step 3: Configure GUTHUB credentials to GIT by entering a commands git config --global user.name"akashsneha15"
+Step 4:Initialize the git repository by entering a command git init
+Step 5: The command to add files or folders git add .
 
 
 Creating repository in GUTHUB
