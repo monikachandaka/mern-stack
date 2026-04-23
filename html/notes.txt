@@ -391,7 +391,17 @@ semantic Tags like:
 
 svg tags:
 ---------
-        ->
+        ->svc(scalable vector ggraphics ) is used to design icons, sgapes, and illustrates on a web page
+        ->Unlike images(<img>),svg does not lose quality when resized
+        ->svg is lightweight, customizable and supports animations.
+Explanation:
+------------
+        ->width="100" height="100" ->sets the size of the svg canvas
+        -><circle></circle>        ->creates a circle
+        ->cx="50" cy="50"          -> defines the center position
+        ->r="40"                   ->sets the radius
+        ->stroke-width="3"         ->defines border thickness
+        ->fill="red"                ->fills the circle with red color
 
 
 
@@ -400,6 +410,6 @@ Creating repository in GUTHUB
 --------------------------------
 Step1: Create a new repository is GITHUB
 Step2: Open the project folder in command prompt
-Step 3: Configure GUTHUB credentials to GIT by entering a commands git config --global user.name"akashsneha15"
+Step 3: Configure GUTHUB credentials to GIT by entering a commands git config --global user.name"
 Step 4:Initialize the git repository by entering a command git init
 Step 5: The command to add files or folders git add . 
