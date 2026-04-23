@@ -357,14 +357,43 @@ media tags:
                         3. height
                         4.width
 
+Anchor Tags
+-------------
+           -> <a></a> tag used to link external websites, webpages, documents, javascript alert message ..etc
+           -> <a></a> tag content default color blue
+           ->  active <a></a> tag content color red
+           -> Visted <a></a> tag content color purple
 
-Creating repository in GUTHUB
---------------------------------
-Step1: Create a new repository is GITHUB
-Step2: Open the project folder in command prompt
-Step 3: Configure GUTHUB credentials to GIT by entering a commands git config --global user.name"akashsneha15"
-Step 4:Initialize the git repository by entering a command git init
-Step 5: The command to add files or folders git add .
+Anchor Tag Attributes
+---------------------
+         ->href: it will accept url or path as a value
+         -> target: it will decide the page will open in new tab or in same tab based on the values [ _blank, _self, _top , _parent]
+         ->download
+
+Semantic Tags:
+--------------
+        ->semantic tags are used to build proper structure of code / web page
+        ->usind semantic tags we can increase SEO(search engine Optimization) and also increase the code readability 
+        ->semantic tags aare developer friendly
+semantic Tags like:
+------------------
+         1.<header></header>
+         2.<footer></footer>
+         3.<nav></nav>
+         4.<main></main>
+         5.<section></section>
+         6.<figure></figure>
+         7.<details></details>
+         8.<aside></aside>
+         9.<article></article>
+         10.<strong></strong>
+         11.<em></em>
+
+svg tags:
+---------
+        ->
+
+
 
 
 Creating repository in GUTHUB

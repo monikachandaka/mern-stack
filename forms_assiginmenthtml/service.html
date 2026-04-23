@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Service Request Form</h1>
+    <form>
+        <fieldset>
+            <label for="" >Cutomer Name:</label>
+            <input name="text" id="name" placeholder="enter your name" required>
+            <br><br>
+
+           <label for="">Contact Number:</label> 
+           <input type="tel" pattern="[6-9]{1}[0-9]{9}" id="contact" placeholder="+91" required>
+           <br><br>
+
+           <label for="">Issue Type:</label>
+           <select id="issue" name="issue" required>
+               <option value="">Select issue type</option>
+               <option value="hardware">Hardware</option>
+               <option value="software">Software</option>
+               <option value="network">Network</option>
+               <option value="Laptop Repair">Laptop Repair</option>
+               <option value="Internet Issue">Internet Issue</option>
+           </select>
+           <br><br>
+
+           <label for="">Description:</label><br>
+           <textarea id="description" placeholder="Describe your issue" required></textarea> <br><br>   
+
+           <label for="">Priority:
+            <input type="radio" id="high" name="priority" value="high" required>
+            <label for="high">High</label>
+            <input type="radio" id="medium" name="priority" value="medium" required>
+            <label for="medium">Medium</label>
+            <input type="radio" id="low" name="priority" value="low" required>
+            <label for="low">Low</label>
+            <br><br>
+
+            <button type="submit">Submit</button>
+             <button>cancel</button>
+           </label>
+        </fieldset>
+    </form>
+    
+</body>
+</html>

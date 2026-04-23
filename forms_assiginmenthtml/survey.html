@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Survey Form</h1><hr>
+    <form>
+        <fieldset>
+            <label for="">User Name:</label>
+            <input type="text" id="username" placeholder="Enter username" required>
+            <br><br>
+
+            <label for="">Feedback:</label>
+            <textarea id="feedback" placeholder="Enter your feedback" required></textarea>
+            <br><br>
+
+            <label for="">Rating:</label>
+            <input type="radio" id="excellent" name="rating" value="excellent" required>
+            <label for="excellent">1</label>
+            <input type="radio" id="good" name="rating" value="good" required>
+            <label for="good">2</label>  
+            <input type="radio" id="average" name="rating" value="average" required>
+            <label for="average">3</label>
+            <input type="radio" id="poor" name="rating" value="poor" required>
+            <label for="poor">4</label>
+            <input type="radio" id="very_poor" name="rating" value="very_poor" required>
+            <label for="very_poor">5</label>
+            <br><br>
+
+            <label for="">Favorite Technology</label>
+            <select id="fav"  name="fav">
+                <option value="">Select technology</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+                <option value="python">Python</option>
+                <option value="java">Java</option>
+        </select>
+        <br><br>
+
+        <label for="subscribe">Subscribe Option:</label>
+        <input type="radio" id="subscribe" name="subscribe" value="yes" >yes
+        <input type="radio" id="subscribe" name="subscribe" value="no" >no
+        <br><br>
+
+        <button>submit</button>
+        <button>clear</button>
+
+
+
+                
+        </fieldset>
+    </form>
+    
+</body>
+</html>
