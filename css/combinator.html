@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* adjacent sibling selector: used to target the element which is immediately after the specified element */
+       ol+h1{
+            color:red;
+            background-color: plum;
+            
+        }
+       
+        h4>p{
+            background-color: red;
+            color:blue;
+
+        }
+        li{
+            background-color: cyan;
+        }
+        /* childselect: used to target direct child elements */
+        ol>li{
+            background-color: greenyellow;
+            margin: 20px;
+            color:brown;
+        }
+        body>h1:first-child{
+            color:brown;
+        }
+        /* descent selector: used to target direct or indirect child elemnts  */
+        ul p{
+            background-color: cyan;
+            color:blue;
+            }
+            /* general sibling selector: used to select direct and indirect adjacent siblings   */
+            ol~h1{background-color: darkolivegreen ;}
+    </style>
+</head>
+<body>
+    <h1>ordered list</h1>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+    </ol>
+    <h1>unordered list</h1>
+    <ul>
+        <li><p>this is the paragraph present in unordered list</p></li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+    </ul>
+    <h1>heading in 3rd position</h1>
+    <h3>
+        <h4>
+            <p>heading </p>
+        </h4>
+    </h3>
+</body>
+</html>

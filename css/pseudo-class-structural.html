@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li:first-child{
+            background-color: cyan;
+            color:blue;
+        }
+        button:first-child{
+            background-color: cyan;
+            color:blue;
+        }
+        button:first-of-type{
+            background-color: cyan;
+            color:blue;
+        }
+        li:last-child{
+            background-color: rgb(30, 56, 56);
+            color:violet;
+        }
+        button:last-of-type{
+            background-color:plum;
+            color:green;
+        }
+        li:nth-child(2){
+            background-color:plum;
+            color:blue;
+        }
+        li:nth-child(even){
+            background-color: greenyellow;
+            color:brown;
+        }
+        li:nth-child(2),li:nth-child(4){
+            background-color: palevioletred;
+            color:blue;
+        }
+        a:visited{
+            color: red;
+        }
+        a:active{
+            color: plum;
+        font-size: 25px;}
+        input:focus{
+            background-color: ivory;
+            color:blue;
+            font-family: monospace;
+        }
+        div{
+            height: 200px;
+            width: 200px;
+            background-color: darkmagenta;
+        }
+        div:hover{
+            background-color: pink;
+        }
+        a:hover{
+            font-style: italic;
+            text-decoration: underline double 5px;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <input type="search" name="" id="" placeholfder="search here">
+    <h4>
+        <a href="https://www.google.com/">google</a>
+        <a href="https://www.facebook.com/">facebook</a>
+        <a href="https://www.instagram.com/">instagram</a>
+    </h4>
+    <ol>
+        
+        <li>list -items</li>
+        <li>list -items</li>
+        <li>list -items</li>
+        <li>list -items</li>
+        <li>list -items</li>
+    </ol>
+    <div>
+        <span>span1 </span>
+        <button>button1</button>
+        <button>button2</button>
+        <button>button3</button>
+        <button>button4</button>
+        <button>button5</button>
+    </div>
+</body>
+</html>

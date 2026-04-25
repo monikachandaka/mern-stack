@@ -413,3 +413,12 @@ Step2: Open the project folder in command prompt
 Step 3: Configure GUTHUB credentials to GIT by entering a commands git config --global user.name"
 Step 4:Initialize the git repository by entering a command git init
 Step 5: The command to add files or folders git add . 
+
+
+terminal commands
+----------------
+          ->git push -u origin main
+          ->git push -f origin main
+          ->git push origin main --force
+          ->git push orihin main
+          

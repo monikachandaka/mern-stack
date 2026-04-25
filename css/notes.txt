@@ -32,6 +32,33 @@ Types of css selectors
              ->grouping selector(,)
              ->universal selector(*)
         2.combinator selectors
-        3.pseudo class selectors
+          ->descendant(space)
+          ->child(>)
+          ->adjacent sibling(+)
+          ->general sibling(~)
+       3.pseudo class selectors
+          1.structural
+              ->:first-child
+              ->:last-child
+              ->:last-of-type
+              ->:nth-child()
+              ->:first-of-type()
+          2.Dyanamic(Anchor)
+               ->:active   --->
+               ->:visited   ---> anchor tag
+               ->:focus     ---> input tag
+               ->:hover
         4.pseudo elements selectors
+               ->::after
+               ->::before
+               ->::first-letter
+               ->::first-line
+               ->::marker
+               ->::selection
+               ->::placeholder
         5.attribute selectors
+               ->[attr='value']
+               ->[attr|='value']
+               ->[attr*='value']
+               ->[attr^='value']
+               ->[attr~='value']
