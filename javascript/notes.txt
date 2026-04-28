@@ -1,0 +1,3 @@
+javascript:
+-----------
+it is a scripting and programming language
