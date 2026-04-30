@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // //  let userDetails= function () {
+        //     let userName="ravi@!23";
+        //     let password="12334cvf";
+        //     console.log(userName);
+        //     console.log(password);
+        //     console.log("this is functional expression");
+        // }
+
+        // // userDetails();
+
+        //     let userDetails= function (userName,password) {
+        //     console.log("this is functional expression");
+        //     return userName+" "+password
+
+
+        //    }
+
+        //    let result=userDetails('ravi@123','adhxdgiks435678');
+        //     console.log(userDetails("ramu","ramu@1223"));
+        //     console.log(result);
+
+        //normal function
+        function employeeDetails(name, role, salary, address) {
+            console.log("this is normal function..")
+            console.log("name", name);
+            console.log("role", role);
+            console.log("salary", salary);
+            console.log("address", address);
+            return [name, role, salary, address]
+        }
+
+        let emp1 = employeeDetails("moni", "developer", 98765432, "kochi");
+        console.log(emp1);
+
+        //immediate invoking function/self calling function
+
+        (function () {
+            let apikey = "AIzaSyA3FKWSWXPzN77FnsaHsxPm568_t222n9g"
+            console.log("this is immediate invoking function");
+            console.log(apikey);
+            return apikey;
+        })
+            ()
+        let a = 10;
+
+        //arrow function
+
+        let arrowFun = () => console.log("Arrow function");
+        arrowFun()
+        arrowFun()
+        arrowFun()
+
+        let test = (skills, name) => {
+            let a = 10
+            let b = 20
+            console.log(a, b);
+            console.log("Name:", name, "Skills:", skills);
+
+
+        }
+        test(["node js", "express js", "mongobd", "react js"], "vivek ayan")
+
+        //nested functions
+
+        //    function outerfun() {
+        //     function innerFun() {
+        //         console.log("inner function");
+        //     }
+        //     console.log(("outer function"));
+        //     innerFun()
+
+        //    }
+        //   outerfun()
+
+        // function outerFun(a,b){
+        //      console.log("outer function")
+        //     return  function innerFun(){
+        //         console.log(a,b)
+        //         console.log("inner function")
+        //     }
+
+        //   }
+        //  let result1=outerFun(10,20)
+        //  result1()  
+
+        function outerFun(count) {
+            console.log("outer function")
+            return function innerFun() {
+                return count++;
+            }
+
+        }
+        let result1 = outerFun(1)
+        console.log(result1());
+        console.log(result1());
+        console.log(result1());
+        console.log(result1());
+
+
+        function homePage() {
+            console.log("home page");
+
+        }
+        function loginpage() {
+            console.log("login page logic");
+        }
+        function registerpage() {
+            console.log("register page logic");
+        }
+
+        homePage(registerpage(), loginpage())
+
+        function display(fun1, fun2) {
+            fun1();
+            fun2();
+        }
+
+        display(() => {
+            console.log("first callback function");
+
+        }, () => {
+            console.log("second callback function");
+
+        })
+
+        //generator function
+
+        function* generator() {
+            yield 10;
+            yield 50;
+            yield 60;
+            console.log("this is generator function");
+        }
+        let nextGen=generator();
+          while(!nextGen.next().done)
+        console.log(nextGen.next().value);
+    
+        
+        
+        
+
+
+
+
+
+    </script>
+</body>
+
+</html>

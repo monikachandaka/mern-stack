@@ -164,7 +164,35 @@ JS functions types:
    5.Arrow function(ES 6)
    6.Nested functions
    7.Higher order function
+      ->any functions that will be accept another parameter 
    8.callback function
+       ->any function passing as value to the higher order function
    9.generator function
+        ->
+
+objects:
+---------
+      ->they are real time entities which are used to store data in the form ley and value pair
+
+      1.literal way
+      2.using keyword(create for object class)
+
+DOM(Document object model)
+------------------------------
+              ->DOM are used to manipulate HTML and CSS 
+              ->To build dynamic web pages
 
 
+BOM(Browser object model)
+--------------------------
+         ->is the predefined inbuilt object present in every Browser
+         ->it contains windows object
+
+
+we can apply events in three different ways:
+---------------------------------------------
+  1.attribute way()
+    ->onclick=""
+    ->onsubmit=""
+  2.property way
+  3.add event listeners

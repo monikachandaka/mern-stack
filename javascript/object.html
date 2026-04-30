@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj={
+            name:"raju",
+            rollnumber:'trdwcvb345678',
+            skills:['html','css','js'],
+            address:{
+                city:"vizag",
+                zipcode:1234567
+            }
+        }
+
+        
+        
+        console.log(obj);
+        console.log(obj.name);
+        console.log(obj.address.city);
+        console.log(obj.skills[0]);
+
+        
+        console.log(Object.keys(obj));
+        console.log(Object.values(obj));
+        console.log(Object.entries(obj));
+
+        obj.name="teja";
+        obj.cousre='b.tech'
+        delete obj.address;
+        console.log(obj);
+
+        Object.seal(obj)
+        console.log(Object.isSealed(obj));
+
+        delete obj.name; //no
+        obj.rollnumber="1234567" //yes
+        obj.age=25; //no
+        console.log(obj);
+
+        Object.freeze(obj);
+        console.log(Object.isFrozen(obj));
+        obj.rollnumber="12345689" //
+        obj.age=25; //no
+        console.log(obj);
+
+        window.console.log("hello")
+
+        
+        
+
+        
+        
+        
+        
+
+    //    const obj1= new Object({
+    //         username:"admin",
+    //         password:"admin123"
+    //     })
+    //     console.log(obj1);
+        
+        
+    </script>
+    
+</body>
+</html>
