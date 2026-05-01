@@ -196,3 +196,54 @@ we can apply events in three different ways:
     ->onsubmit=""
   2.property way
   3.add event listeners
+
+Loops
+-------
+   ->loops are used to iterate the statements untill the condition satisfies
+             1.for loop:
+                syntax: 
+                      for(initialization; condition ; increment/ decrement){
+
+                      }
+             2.while loop
+                 syntax:
+                    while(condition){
+                        increment/decrement;
+                    }
+             3.do while loop
+                  syntax:
+                  do{
+                     increment/decrement;};
+                      while(condition);
+                     
+             4.for-in loop
+                   ->for-in loop is used to iterate strings,arrays
+                   ->for-in loop is used to fetch only index's
+                        syntax:
+                           for(variable in string/arrays){
+
+                           }
+
+             5.for-of loop
+                   ->for-of loop is used to iterate strings,arrays
+                   ->for-of loop is used to fetch only values
+                         syntax:
+                            for(variable of string/arrays){
+
+                            }
+                  
+             6.forEach loop 
+                  ->foreach() is the higher order function used to iterate only for arrays
+                           syntax:
+                              variableName.forEach((value,index,array)=>{
+
+                              }
+                              )
+
+Array inbult 
+------------
+    ->map()
+    ->filter()
+    ->reduce()
+
+                              

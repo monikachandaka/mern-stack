@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr1=[10,20,30,40];
+        let arr2=[50,null, { name:"navya",role:"developer"},()=>{
+            console.log("HELLO");
+
+        }]
+//spread operators in array
+        let arr3=[...arr1 , ...arr2, "html","css",true];
+        console.log(arr3);
+//array de-structuring
+        let [a,b,c,d]=arr1;
+        console.log(a);
+        console.log(b);
+        console.log(c);
+        console.log(d);
+        let [e,f,g,h]=arr2;
+        console.log(e);
+        console.log(f);
+        console.log(g);
+        console.log(h);
+        //SPREAD OPERATORS IN OBJECTS
+
+        let user={
+            name:"monika",
+            phone:987656789
+
+        }
+
+        let orderDetails={
+            productName:"mobile",
+            price:50000,
+            status:"Done",
+        }
+
+        let orderedHistory={...user,...orderDetails};
+        console.log(orderedHistory);
+
+    </script>
+</body>
+</html>

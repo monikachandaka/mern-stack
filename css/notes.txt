@@ -1,4 +1,4 @@
-lCSS:
+l.CSS:
 ------
           ->CSS stands for cascading style sheet used to apply stylings,layouts,animations to the web page
           ->css are introduced in the year 1994 by the developer "hakon wium lie"
