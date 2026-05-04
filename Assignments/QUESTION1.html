@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let body = document.querySelector("body")
+
+        let table = document.createElement("table");
+        let thead = document.createElement('thead');
+        let tr1 = document.createElement("tr");
+        let tbody = document.createElement("tbody")
+        tr1.innerHTML = `<th>Name</th>
+                       <th>RollNo</th>
+                       <th>CN</th>
+                       <th>OS</th>
+                       <th>CNS</th>
+                       <th>CD</th>
+                       <th>Total Marks</th>
+                       <th>Percentage</th>
+                       <th>Actions</th>
+                       `
+
+        thead.appendChild(tr1)
+        table.appendChild(thead)
+        body.appendChild(table)
+        table.appendChild(tbody)
+        table.border = 1
+        table.cellSpacing = 0
+        table.cellPadding = 10
+
+
+        let studentDetails = [
+            { name: 'ravi', rollNo: '123', marks: { CN: 90, OS: 98, CNS: 90, CD: 69 } },
+            { name: 'ram', rollNo: '456', marks: { CN: 60, OS: 88, CNS: 88, CD: 65 } },
+            { name: 'Neha', rollNo: '789', marks: { CN: 20, OS: 28, CNS: 28, CD: 25 } },
+        ]
+        studentDetails.forEach((student) => {
+            let trow = document.createElement('tr');
+            let percentage = (student.marks.CN + student.marks.OS + student.marks.CNS + student.marks.CD) / 400 * 100;
+            let bgColor = null;
+            if (percentage >= 85 && percentage <= 100) {
+            
+            } else if (percentage >= 65 && percentage <= 84) {
+              
+            } else if (percentage >= 55 && percentage <= 64) {
+                
+            } else {
+                
+            }
+
+            trow.style.backgroundColor = bgColor;
+            trow.innerHTML = `
+                            <td>${student.name} </td>
+                            <td>${student.rollNo} </td>
+                            <td>${student.marks.CN} </td>
+                            <td>${student.marks.OS} </td>
+                            <td>${student.marks.CNS} </td>
+                            <td>${student.marks.CD} </td>
+                            <td>${student.marks.CN + student.marks.OS + student.marks.CN + student.marks.CD} </td>
+                            <td>${percentage} %</td>
+                            <td>
+                                 <button>Edit</button>
+                                 <button>Delete</button>
+                            </td>
+                            `
+            tbody.appendChild(trow)
+
+        })
+
+
+    </script>
+</body>
+
+</html>

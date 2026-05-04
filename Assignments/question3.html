@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Background Color Changer</title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 50px;
+            transition: background-color 0.3s ease;
+            background-color:chocolate;
+            display:flex;
+            flex-direction: column;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        h2 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color:white;
+            text-shadow: black 0.1em 0.1em 0.2em;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Background Color Changer</h2>
+
+    <button onclick="changeColor('plum')">plum</button>
+    <button onclick="changeColor('green')">Green</button>
+    <button onclick="changeColor('orange')">Orange</button>
+    <br>
+    <button onclick="resetColor()">Reset</button>
+
+    <script>
+        const originalColor = document.body.style.backgroundColor;
+
+        function changeColor(color) {
+            document.body.style.backgroundColor = color;
+        }
+
+        function resetColor() {
+            document.body.style.backgroundColor = originalColor || 'white';
+        }
+    </script>
+
+</body>
+</html>
