@@ -9,17 +9,25 @@ const Login = () => {
         otp: "",
     });
 
-    const [mailOtp, setMailOtp] = useState(0);
+    const navigate= useNavigate();
+    let [mailOtp, setMailOtp] = useState(0);
 
     const handleLogin = (e) => {
-
-
         try {
             e.preventDefault();
-            if (mailOtp == loginDetails.otp && loginDetails.password != "") {
+            if ( mailOtp == loginDetails.otp && loginDetails.password != " ") {
                 toast.success("login Successful")
-            } else if (mailOtp != loginDetails.otp) {
+
+                localStorage.setItem("token","234asdfgfdf");
+                setTimeout(()=>{
+                    navigate("/home");
+                },3000);
+            }
+             else if(mailOtp !=loginDetails.otp){
                 toast.warn("invalid OTP");
+            }
+            else{
+                toast.error("Failed to login")
             }
             console.log(loginDetails);
             console.log(mailOtp);

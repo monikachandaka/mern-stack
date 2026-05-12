@@ -1,4 +1,3 @@
-import React from 'react'
 
 const Products = () => {
   return (
@@ -8,4 +7,4 @@ const Products = () => {
   )
 }
 
-export default Products;
+export default Products

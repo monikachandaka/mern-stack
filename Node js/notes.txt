@@ -1,0 +1,49 @@
+Node Js:
+----------
+     ->node js is the run time server side js runtime environment
+     ->using node js we can build server(http core model)
+
+run js file:
+------------
+      command -> node fileName
+
+user defined Modules:
+-------------------------
+     ->Any functoins defined by user  is knowm as user defined Modules
+
+     ->export modules from one file to another
+                 syntax:   module.export =moduleName
+                                  module.exports={moduleName1,moduleName2....}
+
+     ->import exported module
+           syntax:  const {moduleName1,moduleName2} = require("fileName")     
+
+node core inbuilt modules(core modules):
+--------------------------------------
+     ->core modules is the inbuilt modules no need to required install externally   
+        1.fs module (file system)
+        -----------------
+               ->fs module allows raeding,writing,updating and deleting the files
+
+               inbuilt methods in fs
+               ----------------------
+                     ->fs.readFile()
+                     ->fs.writeFile()
+                     ->fs.appendFile()
+                     ->fs.unlink()
+
+        2.path module:
+        -------------
+             ->helps in working with file paths(folder navigation,extensions,file name)
+                inbuilt methods
+                -------------
+                      ->path.join()
+                      ->path.resolve()
+                      ->path.extname()
+                      ->path.basename()
+        3.os 
+        4.http    
+        ----------
+                 ->used to create HTTP servers(backend APIs)
+                 ->Node.js can create a server without Express using the http module
+                       
