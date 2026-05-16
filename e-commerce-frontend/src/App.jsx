@@ -1,6 +1,6 @@
 /* eslint-disable react-refresh/only-export-components */
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-;
+
 import NavBar from "./components/NavBar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./assets/style.css";
