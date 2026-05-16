@@ -175,7 +175,8 @@ Logical operators:
 ---------------------
     1,$and
     2.$or
-    3.$not
+    3.$nor
+    4.$not
 
 
 
@@ -190,6 +191,128 @@ syntax:   db.collectionName.find().skip(number)
 syntax:   db.collectionName.find().limit(number)
 syntax:   db.collectionName.find().sort({field:value})
 
-Aggregate functions:
+Aggregate functions(Aggregate Pipelines):
 ----------------------
   ->these are used to group and then sum
+  ->Aggregate functions are used to perform operations on stage by stage
+     syntax:
+          ---------------------------------------------------
+          |  db.collectionName.aggregate({filter condition})  |
+          ---------------------------------------------------
+      ---------------------------------------------------------
+       db.collectionName.aggregate([
+        {stage 1},{stage 2}
+       ])
+      ------------------------------------------------------
+Aggregate operators:
+----------------------
+  1.$match: used to match the data in collection
+  2.$group :  to find the no.of fields depending on the field given
+
+  Q.display max salary in each dept
+
+          db.Employee_Details.aggregate({
+    $group:{
+     _id:"$department",
+    maxSalaryInEachDept:{$max:"$salary"}
+  }
+      })
+
+     
+    
+  3.$min  :should use in group
+  4.$max  :used in group
+  5,$avg   :used in group
+  6.$sum : to count
+  7.$lookup : to perform joints in Mongobd
+
+  db.Orders.aggregate(
+  {
+    $lookup:{
+      from:"Customers",
+      localField:"_id",
+      foreignField:"Customer_id",
+      as:"Order_By_This_Customer"
+    }
+  }
+)
+
+  8.$unwind  : used to create or use data in separate collection   (creates new document)
+      db.Employee_Details.aggregate(
+  
+    {$unwind:"$skills"}
+  
+         )
+
+  9.$project: 
+  10.$sort:
+  11.$limit:
+  12.$out  :
+  db.Employee_Details.aggregate(
+  [
+    {$match:{experience_years:{$gt:6}}},
+    {$group:{
+      _id:"job_title",
+      totalsalaryinthisrole:{$sum:"$salary"},
+      minsalary:{$min:"$salary"},
+      minsalary:{$min:"$salary"},
+      avgsalary:{$avg:"salary"},    
+    }},
+    {$out:"experience_6_years_title_based_salary_report"}
+  ]
+)
+
+
+
+
+db.customers.aggregate(
+ [
+   {
+    $lookup:{
+      from:"orders",
+      localField:"_id",
+      foreignField:"customer_id",
+      as:"orderDetails"
+    }
+  },
+   {
+     $unwind:"$orderDetails"
+   },
+   {
+     $group:{
+       _id:"$orderDetails.customer_id",
+       orderCount:{$sum:1}
+     }
+   },
+   {$sort:{_id:1}},
+   {$lookup:
+               {
+          from:"customers",
+          localField:"_id",
+          foreignField:"_id",
+                 as:"customerDetails"
+               }
+   },
+   {$project:{"customerDetails.name":1,_id:0,orderCount:1}}
+ ]
+)
+
+ 13.$count
+ 14.$skip
+
+
+
+ Index:
+ ------
+        1.createIndex({fieldName:1})
+          ->1 ascending order , 0 descending order
+
+          syntax:  
+             ---------------------------------------------------------
+                  
+                   db.collectionName.createIndex({fieledName:1})
+
+                    db.collectionName.getIndexes()
+                     
+                    db.collectionName.dropIndex(indexName) 
+             ----------------------------------------------------------       
